@@ -1,10 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div>
+    <div className="bg-gradient-to-r from-green-400 to-blue-500">
       <h1>Rent a Car</h1>
     </div>
   );
