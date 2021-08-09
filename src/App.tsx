@@ -1,11 +1,26 @@
 import React from 'react';
+import tw from 'twin.macro';
+import styled from 'styled-components';
 import './App.css';
+import { Home } from './app/pages/Home';
+import { NavBar } from './app/components/NavBar';
+
+const Container = styled.div`
+  ${tw`
+    flex
+    flex-col
+    w-full
+    h-full
+    items-center
+    overflow-x-hidden
+  `}
+`;
 
 function App() {
   return (
-    <div className="bg-gradient-to-r from-green-400 to-blue-500">
-      <h1>Rent a Car</h1>
-    </div>
+    <Container className="App">
+      <Home></Home>
+    </Container>
   );
 }
 
