@@ -11,7 +11,6 @@ const Container = styled.nav`
     justify-between
     overflow-x-hidden
     w-full
-    h-full
     max-w-screen-2xl
     lg:px-12
   `}
