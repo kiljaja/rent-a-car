@@ -30,59 +30,27 @@ const Item = styled.li`
   `}
 `;
 
-const itemList = (
-  <List>
-    <Item>
-      <a href="#">Home</a>
-    </Item>
-    <Item>
-      <a href="#">Cars</a>
-    </Item>
-    <Item>
-      <a href="#">Services</a>
-    </Item>
-    <Item>
-      <a href="#">Contact Us</a>
-    </Item>
-  </List>
-);
+const navItemData = [
+  { link: '/', title: 'Home' },
+  { link: '/', title: 'Cars' },
+  { link: '/', title: 'Services' },
+  { link: '/', title: 'Contact Us' },
+];
+
+const itemList = navItemData.map((item) => (
+  <Item>
+    <a href={item.link}>{item.title}</a>
+  </Item>
+));
 export function NavItems() {
   const isMobile = useMediaQuery({ maxWidth: SCREENS.sm });
 
   if (isMobile)
     return (
       <Menu right styles={HAMBURGER_STYLES}>
-        <List>
-          <Item>
-            <a href="#">Home</a>
-          </Item>
-          <Item>
-            <a href="#">Cars</a>
-          </Item>
-          <Item>
-            <a href="#">Services</a>
-          </Item>
-          <Item>
-            <a href="#">Contact Us</a>
-          </Item>
-        </List>
+        <List>{itemList}</List>
       </Menu>
     );
 
-  return (
-    <List>
-      <Item>
-        <a href="#">Home</a>
-      </Item>
-      <Item>
-        <a href="#">Cars</a>
-      </Item>
-      <Item>
-        <a href="#">Services</a>
-      </Item>
-      <Item>
-        <a href="#">Contact Us</a>
-      </Item>
-    </List>
-  );
+  return <List>{itemList}</List>;
 }
