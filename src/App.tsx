@@ -2,8 +2,8 @@ import React from 'react';
 import tw from 'twin.macro';
 import styled from 'styled-components';
 import './App.css';
-import { Home } from './app/pages/Home';
-import { NavBar } from './app/components/NavBar';
+import { Home } from './app/pages/home/Home';
+import { NavBar } from './app/components/nav-bar/NavBar';
 
 const Container = styled.div`
   ${tw`

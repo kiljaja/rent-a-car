@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { NavBar } from '../../components/NavBar';
+import { NavBar } from '../../components/nav-bar/NavBar';
 
 const Container = styled.div`
   ${tw`

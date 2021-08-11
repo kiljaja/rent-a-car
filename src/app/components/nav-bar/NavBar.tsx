@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { Logo } from '../Logo';
+import { Logo } from '../logo/Logo';
 import { NavItems } from './NavItems';
 
 const Container = styled.nav`
