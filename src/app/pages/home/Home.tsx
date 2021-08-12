@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
+import { BookCard } from '../../components/book-card/BookCard';
 import { NavBar } from '../../components/nav-bar/NavBar';
 import { HeroBanner } from './HeroBanner';
 
@@ -18,5 +19,6 @@ export function Home() {
   return <Container>
     <NavBar></NavBar>
     <HeroBanner></HeroBanner>
+    <BookCard />
   </Container>;
 }

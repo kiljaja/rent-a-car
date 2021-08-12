@@ -137,6 +137,9 @@ const Car = styled.div`
 const ButtonContainer = styled.div`
   ${tw`
     flex
+    flex-wrap
+    mt-4
+    max-w-screen-md
   `}
 `;
 
@@ -151,9 +154,9 @@ export function HeroBanner() {
           velit, aperiam itaque rerum temporibus laboriosam suscipit deleniti!
         </Description>
         <ButtonContainer>
-          <Button text="Book your Ride" handleClick={() => null} />
+          <Button text="Book Your Ride" handleClick={() => null} />
           <Button
-            text="Book your Ride"
+            text="Rent Your Ride"
             theme="filled"
             handleClick={() => null}
           />
