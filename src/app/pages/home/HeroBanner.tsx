@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
 
-import carImg from '../../../assets/images/mclaren-orange-big.png'
-import blobImg from '../../../assets/images/blob.svg'
+import carImg from '../../../assets/images/mclaren-orange-big.png';
+import blobImg from '../../../assets/images/blob.svg';
 import { SCREENS } from '../../utils/responsive/screen-data';
-
+import { Button } from '../../components/button/Button';
 
 const Container = styled.header`
   min-height: 400px;
@@ -44,7 +44,7 @@ const Slogan = styled.h1`
     md:text-5xl
     lg:text-6xl
     font-bold
-    md:font-extrabold
+    font-extrabold
     lg:font-black
     leading-snug
     md:leading-normal
@@ -64,7 +64,6 @@ const Description = styled.p`
     text-gray-800
   `}
 `;
-
 
 const BlobContainer = styled.div`
   z-index: -1;
@@ -103,7 +102,7 @@ const BlobContainer = styled.div`
     top: -25em;
     transform: rotate(-20deg);
   }
-`
+`;
 
 const Car = styled.div`
   ${tw`
@@ -112,7 +111,7 @@ const Car = styled.div`
     -top-20
     h-40
   `}
-  
+
   img {
     height: 100%;
     max-height: fit-content;
@@ -133,7 +132,13 @@ const Car = styled.div`
     right: -13em;
     top: -9em;
   }
-`
+`;
+
+const ButtonContainer = styled.div`
+  ${tw`
+    flex
+  `}
+`;
 
 export function HeroBanner() {
   return (
@@ -145,6 +150,14 @@ export function HeroBanner() {
           ea officia ut illum quae quia delectus, odit, nemo ex eius maiores
           velit, aperiam itaque rerum temporibus laboriosam suscipit deleniti!
         </Description>
+        <ButtonContainer>
+          <Button text="Book your Ride" handleClick={() => null} />
+          <Button
+            text="Book your Ride"
+            theme="filled"
+            handleClick={() => null}
+          />
+        </ButtonContainer>
       </LeftSide>
       <RightSide>
         <BlobContainer>
