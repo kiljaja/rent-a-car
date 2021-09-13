@@ -38,7 +38,7 @@ const navItemData = [
 ];
 
 const itemList = navItemData.map((item) => (
-  <Item>
+  <Item key={item.title}>
     <a href={item.link}>{item.title}</a>
   </Item>
 ));
