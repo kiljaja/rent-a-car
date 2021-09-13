@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import tw from 'twin.macro';
-import { BookCard } from '../../components/book-card/BookCard';
-import { NavBar } from '../../components/nav-bar/NavBar';
+import { BookCard } from './BookCard';
 import { HeroBanner } from './HeroBanner';
 
 const Container = styled.div`
@@ -17,7 +16,7 @@ const Container = styled.div`
 
 export function Home() {
   return <Container>
-    <NavBar></NavBar>
+    
     <HeroBanner></HeroBanner>
     <BookCard />
   </Container>;

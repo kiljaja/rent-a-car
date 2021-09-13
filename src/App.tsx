@@ -19,6 +19,7 @@ const Container = styled.div`
 function App() {
   return (
     <Container className="App">
+      <NavBar></NavBar>
       <Home></Home>
     </Container>
   );
